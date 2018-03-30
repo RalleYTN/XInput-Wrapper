@@ -8,7 +8,6 @@ This library is a full wrapper (state 03/30/2018) of the XInput API from Microso
 The XInput API was wrapped 1:1 with JNA. All function and member names are still the same, with the only difference being that the structure names are now in upper camel case
 like any other normal Java class to prevent confusion with the constants.
 
-
 An example of an implementation can be found in the unit tests.
 
 ## Changelog
