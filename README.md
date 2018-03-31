@@ -12,6 +12,11 @@ An example of an implementation can be found in the unit tests.
 
 ## Changelog
 
+### Version 1.1.0
+
+- Added a `module-info.java`.
+- Added the `Info` class. Its purpose is to give information about which DLL was loaded and which functions are available. There is only a single instance of this class and it can be retrieved by the new `INFO` constant in the `XInput` interface.
+
 ### Version 1.0.0
 
 - Release

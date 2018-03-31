@@ -35,7 +35,7 @@ import com.sun.jna.ptr.LongByReference;
  * XInput Game Controller API enables applications to receive input from the Xbox 360 Controller for Windows.
  * <p><code>Source: <a href="https://msdn.microsoft.com/de-de/library/windows/desktop/hh405053(v=vs.85)">Microsoft Documentation</a></code></p>
  * @author Ralph Niemitz/RalleYTN(ralph.niemitz@gmx.de)
- * @version 1.0.0
+ * @version 1.1.0
  * @since 1.0.0
  */
 public interface XInput extends Library {
@@ -139,6 +139,13 @@ public interface XInput extends Library {
 	/** @since 1.0.0 **/ public static final int XUSER_MAX_COUNT = 4;
 	
 	/**
+	 * Contains informations about the loaded DLL and the available functions.
+	 * All values in it will be {@code null} if the {@link #create()} method wasn't called yet.
+	 * @since 1.1.0
+	 */
+	public static final Info INFO = new Info();
+	
+	/**
 	 * Creates a new instance of {@linkplain XInput}.
 	 * It is recommended to call this method only once and save the result in a public constant.
 	 * The instance will be destroyed on garbage collection.
@@ -175,6 +182,7 @@ public interface XInput extends Library {
 				if(Files.exists(path.resolve(dll))) {
 					
 					System.setProperty("jna.library.path", path.resolve(dll).toString());
+					INFO.setLoadedDLL(dll);
 					return (XInput)Native.loadLibrary(dll, XInput.class);
 				}
 			}

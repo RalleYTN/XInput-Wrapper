@@ -23,6 +23,7 @@
  */
 package de.ralleytn.wrapper.microsoft.xinput.tests;
 
+import java.lang.reflect.Method;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -44,13 +45,26 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 /**
  * The test assumes that a single wired XInput gamepad is connected to a XInput 1.4 environment.
  * @author Ralph Niemitz/RalleYTN(ralph.niemitz@gmx.de)
- * @version 1.0.0
+ * @version 1.1.0
  * @since 1.0.0
  */
 class XInputTest {
 
 	private static final XInput XINPUT = XInput.create();
 	private static final Gamepad GAMEPAD = new Gamepad(XINPUT, 0);
+	
+	@Test
+	public void testInfo() {
+		
+		System.out.println("Loaded: " + INFO.getLoadedDLL());
+		
+		for(Method method : INFO.getAvailableMethods()) {
+			
+			System.out.println(method);
+		}
+		
+		System.out.println();
+	}
 	
 	@Test
 	public void testGetCapabilities() {
