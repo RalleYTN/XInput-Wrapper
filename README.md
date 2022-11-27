@@ -1,7 +1,3 @@
-[![Build Result](https://api.travis-ci.org/RalleYTN/XInput-Wrapper.svg?branch=master)](https://travis-ci.org/RalleYTN/XInput-Wrapper)
-[![Coverage Status](https://coveralls.io/repos/github/RalleYTN/XInput-Wrapper/badge.svg?branch=master)](https://coveralls.io/github/RalleYTN/XInput-Wrapper?branch=master)
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/84dbebc02453433fa14aee4affe42053)](https://www.codacy.com/app/ralph.niemitz/XInput-Wrapper?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=RalleYTN/XInput-Wrapper&amp;utm_campaign=Badge_Grade)
-
 # Description
 
 This library is a full wrapper (state 03/30/2018) of the XInput API from Microsoft for Java.
