@@ -1,3 +1,6 @@
+[![RalleYTN](https://circleci.com/gh/RalleYTN/XInput-Wrapper.svg?style=svg)](https://app.circleci.com/pipelines/github/RalleYTN/XInput-Wrapper)
+[![CodeFactor](https://www.codefactor.io/repository/github/ralleytn/xinput-wrapper/badge)](https://www.codefactor.io/repository/github/ralleytn/xinput-wrapper)
+
 # Description
 
 This library is a full wrapper (state 03/30/2018) of the XInput API from Microsoft for Java.
