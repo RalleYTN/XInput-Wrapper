@@ -1,8 +1,0 @@
-language: java
-sudo: false
-
-jdk:
-    - oraclejdk9
-
-scripts:
-    - mvn clean
