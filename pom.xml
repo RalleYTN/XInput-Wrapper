@@ -3,12 +3,11 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>de.ralleytn.wrapper.microsoft.xinput</groupId>
 	<artifactId>XInput-Wrapper</artifactId>
-	<version>1.1.0</version>
+	<version>1.2.0</version>
 	<name>XInput Wrapper</name>
 	<properties>
       <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-      <maven.compiler.target>1.9</maven.compiler.target>
-      <maven.compiler.source>1.9</maven.compiler.source>
+      <maven.compiler.release>11</maven.compiler.release>
 	</properties>
 	<description>A 1:1 XInput wrapper for Java that was made with JNA.</description>
 	<licenses>
@@ -33,10 +32,9 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
-				<version>3.7.0</version>
+				<version>3.8.0</version>
 				<configuration>
-					<source>9</source>
-                    <target>9</target>
+					<release>11</release>
                     <showWarnings>true</showWarnings>
 					<showDeprecation>true</showDeprecation>
 				</configuration>
@@ -47,37 +45,13 @@
 		<dependency>
 			<groupId>net.java.dev.jna</groupId>
 			<artifactId>jna</artifactId>
-			<version>4.5.1</version>
+			<version>5.12.1</version>
 		</dependency>
     	<dependency>
     		<groupId>org.junit.jupiter</groupId>
-    		<artifactId>junit-jupiter-api</artifactId>
-    		<version>5.0.3</version>
+    		<artifactId>junit-jupiter</artifactId>
+    		<version>5.8.0</version>
     		<scope>test</scope>
     	</dependency>
-		<dependency>
-			<groupId>org.junit.jupiter</groupId>
-			<artifactId>junit-jupiter-engine</artifactId>
-			<version>5.0.1</version>
-			<scope>test</scope>
-		</dependency>
-		<dependency>
-			<groupId>org.junit.vintage</groupId>
-			<artifactId>junit-vintage-engine</artifactId>
-			<version>4.12.1</version>
-			<scope>test</scope>
-		</dependency>
-		<dependency>
-			<groupId>org.junit.platform</groupId>
-			<artifactId>junit-platform-launcher</artifactId>
-			<version>1.0.1</version>
-			<scope>test</scope>
-		</dependency>
-		<dependency>
-			<groupId>org.junit.platform</groupId>
-			<artifactId>junit-platform-runner</artifactId>
-			<version>1.0.1</version>
-			<scope>test</scope>
-		</dependency>
     </dependencies>
 </project>

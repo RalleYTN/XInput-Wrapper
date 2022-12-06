@@ -39,10 +39,10 @@ import static org.junit.jupiter.api.Assertions.*;
  * @version 1.1.0
  * @since 1.0.0
  */
-class XInputTest {
+public class TestXInput {
 
 	private static final XInput XINPUT = XInput.create();
-	private static final Gamepad GAMEPAD = new Gamepad(XINPUT, 0);
+	private static final TestGamepad GAMEPAD = new TestGamepad(XINPUT, 0);
 	
 	@Test
 	public void testInfo() {
@@ -135,7 +135,7 @@ class XInputTest {
 	@Test
 	public void testGetAllConnectedGamepads() {
 		
-		List<Gamepad> gamepads = new ArrayList<>();
+		List<TestGamepad> gamepads = new ArrayList<>();
 		
 		for(int userIndex = 0; userIndex < XUSER_MAX_COUNT; userIndex++) {
 			
@@ -143,7 +143,7 @@ class XInputTest {
 			
 			if(code == ERROR_SUCCESS) {
 				
-				gamepads.add(new Gamepad(XINPUT, userIndex));
+				gamepads.add(new TestGamepad(XINPUT, userIndex));
 			}
 		}
 		
@@ -155,8 +155,8 @@ class XInputTest {
 		
 		try {
 
-			Gamepad.AnalogStick left = GAMEPAD.getLeftStick();
-			Gamepad.AnalogStick right = GAMEPAD.getRightStick();
+			TestGamepad.AnalogStick left = GAMEPAD.getLeftStick();
+			TestGamepad.AnalogStick right = GAMEPAD.getRightStick();
 			
 			System.out.println("Push the left stick to the right and the right stick down");
 			

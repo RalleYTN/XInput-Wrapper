@@ -183,7 +183,7 @@ public interface XInput extends Library {
 					
 					System.setProperty("jna.library.path", path.resolve(dll).toString());
 					INFO.setLoadedDLL(dll);
-					return (XInput)Native.loadLibrary(dll, XInput.class);
+					return (XInput)Native.load(dll, XInput.class);
 				}
 			}
 		}

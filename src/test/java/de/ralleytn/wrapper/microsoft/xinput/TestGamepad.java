@@ -31,7 +31,7 @@ import static de.ralleytn.wrapper.microsoft.xinput.XInput.*;
  * @version 1.0.0
  * @since 1.0.0
  */
-public class Gamepad {
+public class TestGamepad {
 
 	private int userIndex;
 	private XInput api;
@@ -44,7 +44,7 @@ public class Gamepad {
 	 * @param userIndex the user index of this gamepad
 	 * @since 1.0.0
 	 */
-	public Gamepad(XInput api, int userIndex) {
+	public TestGamepad(XInput api, int userIndex) {
 		
 		this.userIndex = userIndex;
 		this.api = api;
