@@ -116,7 +116,7 @@ public final class XInputKeystroke extends Structure {
 	public short Flags;
 	
 	/**
-	 * Index of the signed-in gamer associated with the device. Can be a value in the range {@code 0} – {@code 3}.
+	 * Index of the signed-in gamer associated with the device. Can be a value in the range {@code 0} - {@code 3}.
 	 * <p><code>Source: <a href="https://msdn.microsoft.com/en-us/library/windows/desktop/microsoft.directx_sdk.reference.xinput_keystroke(v=vs.85).aspx">Microsoft Documentation</a></code></p>
 	 * @since 1.0.0
 	 */
