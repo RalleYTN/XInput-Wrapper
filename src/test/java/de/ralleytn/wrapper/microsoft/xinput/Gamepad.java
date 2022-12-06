@@ -21,12 +21,8 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-package de.ralleytn.wrapper.microsoft.xinput.tests;
+package de.ralleytn.wrapper.microsoft.xinput;
 
-import de.ralleytn.wrapper.microsoft.xinput.XInput;
-import de.ralleytn.wrapper.microsoft.xinput.XInputGamepad;
-import de.ralleytn.wrapper.microsoft.xinput.XInputState;
-import de.ralleytn.wrapper.microsoft.xinput.XInputVibration;
 import static de.ralleytn.wrapper.microsoft.xinput.XInput.*;
 
 /**

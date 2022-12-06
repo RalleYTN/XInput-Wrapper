@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-package de.ralleytn.wrapper.microsoft.xinput.tests;
+package de.ralleytn.wrapper.microsoft.xinput;
 
 import java.lang.reflect.Method;
 import java.util.ArrayList;
@@ -29,17 +29,8 @@ import java.util.List;
 
 import org.junit.jupiter.api.Test;
 
-import de.ralleytn.wrapper.microsoft.xinput.XInput;
-import de.ralleytn.wrapper.microsoft.xinput.XInputState;
-import de.ralleytn.wrapper.microsoft.xinput.XInputVibration;
-import de.ralleytn.wrapper.microsoft.xinput.XInputBatteryInformation;
-import de.ralleytn.wrapper.microsoft.xinput.XInputCapabilities;
-import de.ralleytn.wrapper.microsoft.xinput.XInputGamepad;
-import de.ralleytn.wrapper.microsoft.xinput.XInputKeystroke;
-
 import static de.ralleytn.wrapper.microsoft.xinput.XInput.*;
-import static org.junit.Assert.fail;
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.*;
 
 
 /**
