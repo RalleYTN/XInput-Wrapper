@@ -41,6 +41,10 @@ Then add the following as dependency:
 
 ## Changelog
 
+### Version 1.2.1
+
+- Added jitpack.yml to fix an issue with Jitpack IO not using JDK 11
+
 ### Version 1.2.0
 
 - Made the library Java 11 compatible.
