@@ -11,8 +11,8 @@ jobs:
                 name: Build
                 command: mvn -B -DskipTests clean package
             - store_artifacts:
-                path: target/XInput-Wrapper-1.2.0.jar
-                destination: XInput-Wrapper-1.2.0.jar
+                path: target/XInput-Wrapper-1.2.1.jar
+                destination: XInput-Wrapper-1.2.1.jar
 workflows:
     Workflow:
         jobs:

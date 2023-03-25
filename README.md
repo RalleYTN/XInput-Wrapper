@@ -1,5 +1,6 @@
 [![RalleYTN](https://circleci.com/gh/RalleYTN/XInput-Wrapper.svg?style=svg)](https://app.circleci.com/pipelines/github/RalleYTN/XInput-Wrapper)
 [![CodeFactor](https://www.codefactor.io/repository/github/ralleytn/xinput-wrapper/badge)](https://www.codefactor.io/repository/github/ralleytn/xinput-wrapper)
+[![](https://jitpack.io/v/RalleYTN/XInput-Wrapper.svg)](https://jitpack.io/#RalleYTN/XInput-Wrapper)
 
 # Description
 
