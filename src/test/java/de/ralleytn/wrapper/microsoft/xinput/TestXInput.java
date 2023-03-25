@@ -69,8 +69,8 @@ public class TestXInput {
 			XInputGamepad gamepad = capabilities.Gamepad;
 			
 			System.out.println("\n====");
-			System.out.println("Left Motor: " + Short.toUnsignedInt(vibration.wLeftMotorSpeed));
-			System.out.println("Right Motor: " + Short.toUnsignedInt(vibration.wRightMotorSpeed));
+			System.out.println("Left Motor: " + vibration.wLeftMotorSpeed);
+			System.out.println("Right Motor: " + vibration.wRightMotorSpeed);
 			System.out.println("Type: " + capabilities.Type);
 			System.out.println("Subtype: " + capabilities.SubType);
 			System.out.println("Flags: " + Integer.toBinaryString(capabilities.Flags));
@@ -225,9 +225,10 @@ public class TestXInput {
 		
 		try {
 			
-			GAMEPAD.setVibration(Short.MAX_VALUE, Short.MAX_VALUE); // vibrate on 50%
+			GAMEPAD.setVibration(65535, 65535); // vibrate on 100%
 			Thread.sleep(5000);
 			GAMEPAD.setVibration(0, 0); // stop vibrating
+			Thread.sleep(5000);
 			
 		} catch(InterruptedException exception) {}
 	}

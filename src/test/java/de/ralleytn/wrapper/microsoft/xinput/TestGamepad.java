@@ -61,8 +61,8 @@ public class TestGamepad {
 	public void setVibration(int leftMotorSpeed, int rightMotorSpeed) {
 		
 		XInputVibration vibration = new XInputVibration();
-		vibration.wLeftMotorSpeed = (short)leftMotorSpeed;
-		vibration.wRightMotorSpeed = (short)rightMotorSpeed;
+		vibration.wLeftMotorSpeed = leftMotorSpeed;
+		vibration.wRightMotorSpeed = rightMotorSpeed;
 		int code = this.api.XInputSetState(this.userIndex, vibration);
 		this.connected = (code == ERROR_SUCCESS);
 	}
