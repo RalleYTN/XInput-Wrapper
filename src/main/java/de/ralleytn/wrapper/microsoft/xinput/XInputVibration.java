@@ -53,14 +53,14 @@ public final class XInputVibration extends Structure {
 	 * <p><code>Source: <a href="https://msdn.microsoft.com/en-us/library/windows/desktop/microsoft.directx_sdk.reference.xinput_vibration(v=vs.85).aspx">Microsoft Documentation</a></code></p>
 	 * @since 1.0.0
 	 */
-	public short wLeftMotorSpeed;
+	public int wLeftMotorSpeed;
 	
 	/**
 	 * <p>Speed of the right motor. Valid values are in the range {@code 0} to {@code 65535}. Zero signifies no motor use; {@code 65535} signifies 100 percent motor use.</p>
 	 * <p><code>Source: <a href="https://msdn.microsoft.com/en-us/library/windows/desktop/microsoft.directx_sdk.reference.xinput_vibration(v=vs.85).aspx">Microsoft Documentation</a></code></p>
 	 * @since 1.0.0
 	 */
-	public short wRightMotorSpeed;
+	public int wRightMotorSpeed;
 
 	@Override
 	protected List<String> getFieldOrder() {
