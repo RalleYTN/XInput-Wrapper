@@ -35,11 +35,15 @@ Then add the following as dependency:
 	<groupId>com.github.RalleYTN</groupId>
 	<artifactId>XInput-Wrapper</artifactId>
 	<!-- NOTE: You can also use the commit ID as version number -->
-	<version>1.2.0</version>
+	<version>1.2.2</version>
 </dependency>
 ```
 
 ## Changelog
+
+### Version 1.2.2
+
+- Changed `XInputVibration.wLeftMotorSpeed` and `XInputVibration.wRightMotorSpeed` to the datatype `int` in order to fix a problem with conversion between uint16 and signed Java short.
 
 ### Version 1.2.1
 
